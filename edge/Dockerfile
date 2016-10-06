@@ -19,4 +19,4 @@ RUN apk add --no-cache \
 
 ADD entrypoint.sh /usr/bin/entrypoint.sh
 
-ENTRYPOINT ["/usr/bin/entrypoint.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "/usr/bin/entrypoint.sh"]
