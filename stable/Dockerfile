@@ -1,4 +1,4 @@
-FROM alpine:edge
+FROM pygmy/alpine-tini:edge
 
 MAINTAINER Maciej Lisiewski <maciej.lisiewski@gmail.com>
 
