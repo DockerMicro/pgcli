@@ -17,6 +17,6 @@ RUN apk add --no-cache \
     pip install https://github.com/dbcli/pgcli/archive/master.zip && \
     apk del .build-deps
 
-ADD entrypoint.sh /usr/bin/entrypoint.sh
+ADD entrypoint.sh /entrypoint.sh
 
-ENTRYPOINT ["/sbin/tini", "--", "/usr/bin/entrypoint.sh"]
+ENTRYPOINT ["/sbin/tini", "--", "/entrypoint.sh"]
