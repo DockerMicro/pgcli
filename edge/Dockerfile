@@ -17,4 +17,6 @@ RUN apk add --no-cache \
     pip install https://github.com/dbcli/pgcli/archive/master.zip && \
     apk del .build-deps
 
-ENTRYPOINT ["/usr/bin/pgcli"]
+ADD entrypoint.sh /usr/bin/entrypoint.sh
+
+ENTRYPOINT ["/usr/bin/entrypoint.sh"]
