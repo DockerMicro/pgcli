@@ -1,8 +1,6 @@
 #!/bin/sh
 connection_url=$1
 
-echo 'test'
-
 if [ -n "$connection_url" ]; then
     /usr/bin/pgcli "$connection_url"
 elif [ -n "$POSTGRES_PORT_5432_TCP_ADDR" ]; then
