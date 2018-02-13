@@ -1,4 +1,4 @@
-FROM pygmy/alpine-tini:3.5
+FROM pygmy/alpine-tini:3.7
 
 MAINTAINER Maciej Lisiewski <maciej.lisiewski@gmail.com>
 
